@@ -123,6 +123,9 @@ h1,
 .fs-16 {
   font-size: 16px;
 }
+.fs-18 {
+  font-size: 18px;
+}
 .fs-20 {
   font-size: 20px !important;
 }
@@ -133,6 +136,9 @@ h1,
 
 .fs-25 {
   font-size: 25px !important;
+}
+.fs-28 {
+  font-size: 28px ;
 }
 
 .fs-30 {
@@ -290,11 +296,14 @@ button#ScrollToTop:hover {
   font-weight: 500;
   padding: 5px 0;
 }
-.footer-social ul li {
+.footer-wrap ul li a:hover{
+  color: #fff;
+}
+.footer-social ul li, .contact-detail ul li {
   padding-left: 30px;
   position: relative;
 }
-.footer-social ul li::after {
+.footer-social ul li::after, .contact-detail ul li::after {
   content: "\f3c5";
   position: absolute;
   top: 5px;
@@ -304,17 +313,29 @@ button#ScrollToTop:hover {
   font-family: "Fontawesome";
   color: #000;
 }
-.footer-social ul li:nth-child(3)::after {
+.contact-detail ul li::after{
+  top: 0px;
+}
+.footer-social ul li:nth-child(3)::after,  .contact-detail ul li:nth-child(3)::after {
   content: "\f3c5";
 }
-.footer-social ul li:nth-child(2)::after {
+.footer-social ul li:nth-child(2)::after,  .contact-detail ul li:nth-child(2)::after {
   content: "\f0e0";
 }
-.footer-social ul li:nth-child(1)::after {
+.footer-social ul li:nth-child(1)::after, .contact-detail ul li:nth-child(1)::after {
   content: "\f095";
 }
-
-
+.form-control {
+  height: 60px;
+  border: 1px solid #c8c8c8 !important;
+  background-color: #fff;
+}
+.contact_from textarea {
+  height: 170px !important;
+}
+.contact-detail {
+  height: 77%;
+}
 @media(max-width:1500px){
   .navbar-brand, .footer-logo a, .scroll .navbar-brand {
     width: 200px;
@@ -353,6 +374,12 @@ h1, .h1 {
 .fs-14 {
     font-size: 12px;
 }
+.fs-28 {
+    font-size: 25px;
+}
+.form-control {
+  height: 50px;
+}
 }
 @media(max-width:1199px){
   .navbar-brand, .footer-logo a, .scroll .navbar-brand {
@@ -388,6 +415,12 @@ h1, .h1 {
 }
 .fs-14 {
     font-size: 10px;
+}
+.fs-28 {
+    font-size: 22px;
+}
+.fs-18 {
+  font-size: 16px;
 }
 }
 
@@ -435,6 +468,15 @@ nav.bg-light {
   .carousel-item {
     height: 570px;
 }
+.contact-detail {
+  height: auto;
+}
+.fs-16 {
+  font-size: 14px;
+}
+.fs-18 {
+  font-size: 15px;
+}
 }
 @media(max-width:767px){
   .footer-social ul li {
@@ -444,6 +486,15 @@ nav.bg-light {
 .part-logo img {
   max-width: 120px;
   object-fit: contain;
+}
+.psychotherapist-sec .col-md-6.border-end {
+  border: 0 !important;
+}
+.sub-img {
+  height: 300px;
+}
+.fs-18 {
+  font-size: 14px;
 }
 }
 
@@ -470,5 +521,14 @@ h1, .h1 {
 }
 .navbar-nav .nav-link {
     font-size: 15px;
+}
+.form-control {
+  height: 45px;
+}
+.fs-16 {
+  font-size: 13px;
+}
+.contact_from textarea {
+  height: 140px !important;
 }
 }
